@@ -1,17 +1,21 @@
+import React from 'react';
 import './App.css';
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Nav from "./components/Nav"
+import Main from "./components/Main"
+import Menu from './components/Menu';
+import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
-    <>
-      <Header/>
+ 
+    <BrowserRouter>
       <Nav/>
-      <Main/>
+      <Main />
+      <Menu/>
       <Footer/>
-    </>
+    </BrowserRouter>
   );
 }
 
